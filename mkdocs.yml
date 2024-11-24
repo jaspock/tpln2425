@@ -1,8 +1,10 @@
-site_name: Técnicas de Procesamiento del Lenguaje Natural
+site_name: Natural Language Processing Techniques
 theme:
   name: material
 
 markdown_extensions:
   - toc:
       permalink: true
-
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
