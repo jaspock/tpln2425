@@ -1,4 +1,4 @@
-# Técnicas de Procesamiento del Lenguaje Natural, 2024-2025
+# Natural Language Processing Techniques, 2024-2025
 
 ## Homework Assignments
 
