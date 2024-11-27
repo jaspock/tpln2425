@@ -8,7 +8,7 @@ With this in mind, the session will be organized into four main blocks. We will 
 
 ## Text preprocessing
 
-### Contents to prepare before the session on 12/4/2023
+### Contents to prepare before the session on 12/4/2024
 
 As mentioned earlier, this session focuses on processing textual data. Texts come from diverse sources, languages, formats, scripts, and character encoding standards. A common preliminary step in preparing text for any NLP-related task is preprocessing it to make it suitable for the specific application. Typical preprocessing tasks include removing formatting, converting character encodings, and tokenizing. Additional steps often involve normalizing text, standardizing punctuation, and similar operations.
 
@@ -22,7 +22,7 @@ Additionally, if you are curious about how popular large language models handle 
 
 ## Morphological parsing
 
-### Contents to prepare before the session on 12/4/2023
+### Contents to prepare before the session on 12/4/2024
 
 In this section, we will explore computational approaches to modeling morphology, the study of word structure. Morphological parsing involves analyzing the components of a word to understand their role in a sentence and their contribution to the meaning of a text fragment. Morphological parsing is essential for various NLP tasks, such as word segmentation and lemmatization.
 
@@ -35,7 +35,7 @@ It is important to note that languages vary significantly in morphological compl
 
 ## Syntactic parsing
 
-### Contents to prepare before the session on 12/4/2023
+### Contents to prepare before the session on 12/4/2024
 
 Syntactic parsing involves automatically inferring the structural relationships between words in a sentence. This task is crucial for understanding the meaning of a text fragment. In this block, we will explore the technologies that enable the analysis of word relationships within sentences and how these relationships impact meaning.
 
@@ -49,7 +49,7 @@ For those interested in learning more about the Universal Dependencies project, 
 
 ## Semantic representation of text
 
-### Contents to prepare before the session on 12/4/2023
+### Contents to prepare before the session on 12/4/2024
 
 This final block of the session focuses on the semantic representation of text. In NLP, there are two main approaches to representing meaning: identifying the semantic roles of text components and producing vector-based semantic representations.
 
