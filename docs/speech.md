@@ -15,7 +15,7 @@ Class materials complement the reading of some chapters from a textbook ("Speech
 
 The activities to complete before this class are:
 
-- Reading and studying the contents of [this page](https://dlsi.ua.es/~japerez/materials/transformers/speech/) on speech recognition. As you will see, the page indicates which contents you should read from the book. After a first reading, read the professor's annotations to help you understand the key concepts of the chapter. Then, perform a second reading of the chapter from the book. After finishing this part, read the description of [modern architectures](https://dlsi.ua.es/~japerez/materials/transformers/speech/#arquitecturas-modernas-para-el-procesamiento-de-voz) specific to speech recognition. In total, this part should take you about 4 hours 🕒️ of work.
+- Reading and studying the contents of [this page](https://dlsi.ua.es/~japerez/materials/transformers/en/speech/) on speech recognition. As you will see, the page indicates which contents you should read from the book. After a first reading, read the professor's annotations to help you understand the key concepts of the chapter. Then, perform a second reading of the chapter from the book. After finishing this part, read the description of [modern architectures](https://dlsi.ua.es/~japerez/materials/transformers/en/speech/#arquitecturas-modernas-para-el-procesamiento-de-voz) specific to speech recognition. In total, this part should take you about 4 hours 🕒️ of work.
 - Then, take this [assessment test](https://forms.gle/woGk9hkmepMVkrg47) on these contents. There are few questions (fewer than in previous tests, in fact), and it will only take a few minutes.
 
 ### Contents for the in-person session
