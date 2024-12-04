@@ -3,8 +3,10 @@ theme:
   name: material
 
 markdown_extensions:
+  - attr_list
   - toc:
       permalink: true
   - admonition
+  - def_list
   - pymdownx.details
   - pymdownx.superfences
