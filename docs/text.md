@@ -1,34 +1,30 @@
 # Architectures for written-text processing
 
-!!! danger
-
-    These materials are temporary and incomplete. If you choose to read them, you do so at your own risk.
-
 In this module, we will study some neural models used to process texts. The professor of this module is Juan Antonio Pérez Ortiz. The module begins with a review of the functioning of logistic regression, which will help us establish the necessary knowledge to understand subsequent models. Next, we study in some detail *skip-grams*, one of the algorithms for obtaining non-contextual word *embeddings*. Then, we review the functioning of *feedforward* neural architectures and study their application to language models. The ultimate goal is to address the study of the most important architecture in current text processing systems: the transformer. Once we have studied these architectures, we will conclude with an analysis of the functioning of pretrained models (foundational models) in general, and language models in particular.
 
 Class materials complement the reading of some chapters from a textbook ("Speech and Language Processing" by Dan Jurafsky and James H. Martin, third edition draft, available online) with annotations made by the professor.
 
 ## First session of this module (December 11, 2024)
 
-### Contents to prepare before the session
+### Contents to prepare before the session {#before-text1}
 
 The activities to complete before this class are:
 
-- Reading and studying the contents of [this page](https://dlsi.ua.es/~japerez/materials/transformers/en/regresor/) on logistic regression. As you will see, the page indicates which contents you should read from the book. After a first reading, read the professor's annotations, whose purpose is to help you understand the key concepts of the chapter. Then, perform a second reading of the chapter from the book. In total, this part should take you about 3 hours 🕒️ of work.
+- Reading and studying the contents of [this page](https://dlsi.ua.es/~japerez/materials/transformers/en/regresor/) on logistic regression. As you will see, the page indicates which contents you should read from the book. After a first reading, read the professor's annotations, whose purpose is to help you understand the key concepts of the chapter. Then, perform a second reading of the book's chapter. In total, this part should take you about 4 hours 🕒️ of work.
 - Watching and studying the video tutorials in this [official PyTorch playlist](https://www.youtube.com/playlist?list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN). Study at least the first 4 videos (“Introduction to PyTorch”, “Introduction to PyTorch Tensors”, “The Fundamentals of Autograd”, and “Building Models with PyTorch”). In total, this part should take you about 2 hours 🕒️ of work.
-- Reading and studying the contents of [this page](https://dlsi.ua.es/~japerez/materials/transformers/en/embeddings/) on embeddings. As you will see, the page indicates which contents you should read from the book. After a first reading, read the professor's annotations to help you understand the key concepts of the chapter. Then, perform a second reading of the chapter from the book. In total, this part should take you about 4 hours 🕒️ of work.
-- After completing the two previous parts, take this [assessment test](https://forms.gle/V3U9MTHo7c9DNhkc6) on these contents. There are few questions, and it will take you a few minutes.
+- Reading and studying the contents of [this page](https://dlsi.ua.es/~japerez/materials/transformers/en/embeddings/) on embeddings. As you will see, the page indicates which contents you should read from the book. After a first reading, read the professor's annotations to help you understand the key concepts of the chapter. Then, perform a second reading of the chapter from the book. In total, this part should take you about 3 hours 🕒️ of work.
+- After completing the previous parts, take this [assessment test](https://forms.gle/V3U9MTHo7c9DNhkc6) on these contents. There are few questions, and it will take you a few minutes.
 
 ### Contents for the in-person session
 
-In the in-person class (5 hours 🕒️ in duration), we will see how to implement a logistic regressor in PyTorch by following the implementations of a binary logistic regressor <a href="https://colab.research.google.com/github/jaspock/me/blob/main/docs/materials/transformers/assets/notebooks/logistic.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> and a multinomial one <a href="https://colab.research.google.com/github/jaspock/me/blob/main/docs/materials/transformers/assets/notebooks/softmax.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> discussed in [this section](https://dlsi.ua.es/~japerez/materials/transformers/en/implementacion/#code-regressor). We will also explore an implementation of the skip-gram algorithm <a target="_blank" href="https://colab.research.google.com/github/jaspock/me/blob/main/docs/materials/transformers/assets/notebooks/skipgram.ipynb">
+In the in-person class (5 hours 🕒️ long), we will see how to implement a logistic regressor in PyTorch by following the implementations of a binary logistic regressor <a href="https://colab.research.google.com/github/jaspock/me/blob/main/docs/materials/transformers/assets/notebooks/logistic.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> and a multinomial one <a href="https://colab.research.google.com/github/jaspock/me/blob/main/docs/materials/transformers/assets/notebooks/softmax.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> discussed in [this section](https://dlsi.ua.es/~japerez/materials/transformers/en/implementacion/#code-regressor). We will also explore an implementation of the skip-gram algorithm <a target="_blank" href="https://colab.research.google.com/github/jaspock/me/blob/main/docs/materials/transformers/assets/notebooks/skipgram.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> discussed [here](https://dlsi.ua.es/~japerez/materials/transformers/en/implementacion/#code-skipgrams).
 
 The idea is for you to study and slightly modify the notebooks we are working on. In a later class, a more advanced assignment involving modifying the transformer's code will be presented.
 
 ## Second session (December 18, 2024)
 
-### Contents to prepare before the session
+### Contents to prepare before the session {#before-text2}
 
 The activities to complete before this class are:
 
@@ -47,7 +43,7 @@ The idea is for you to study and slightly modify the notebooks we are working on
 
 ## Third session (January 8, 2025)
 
-### Contents to prepare before the session
+### Contents to prepare before the session {#before-text3}
 
 The activities to complete before this class are:
 

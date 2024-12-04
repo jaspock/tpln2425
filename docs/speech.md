@@ -11,7 +11,7 @@ Class materials complement the reading of some chapters from a textbook ("Speech
 
 ## First session of this module (January 15, 2025)
 
-### Contents to prepare before the session
+### Contents to prepare before the session {#before-speech1}
 
 The activities to complete before this class are:
 
