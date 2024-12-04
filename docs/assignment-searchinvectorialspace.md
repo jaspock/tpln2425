@@ -105,7 +105,7 @@ Note that, unlike BoW and TF-IDF, sentence embeddings capture the semantic meani
 
 ### Step 1: Trying a general purpose small monolingual model
 
-We will first try a small model that allows to build semantic embeddings for English: the model `all-MiniLM-L6-v2`. You have a nice example on how to obtain the *n*-top matches for a query search in a collection of embeddings using the cosine similarity at: [https://www.sbert.net/examples/applications/semantic-search/README.html](https://www.sbert.net/examples/applications/semantic-search/README.htm).
+We will first try a small model that allows to build semantic embeddings for English: the model `all-MiniLM-L6-v2`. You have a nice example on how to obtain the *n*-top matches for a query search in a collection of embeddings using the cosine similarity at: [https://www.sbert.net/examples/applications/semantic-search/README.html](https://www.sbert.net/examples/applications/semantic-search/README.html).
 
 Note that in this case you will not need to specify any data preprocessing details. The pre-trained model already includes a sub-word tokenizer and takes care of this. Given that these components are trained, changing, for example, capitals, or removing words, could affect negatively to the performance of the model and the quality of the resulting embeddings.
 
