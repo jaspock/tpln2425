@@ -1,10 +1,5 @@
 # Assignment on text similarity using vectorial representations of text
 
-!!! danger
-
-    These materials are temporary and incomplete. If you choose to read them, you do so at your own risk.
-
-
 In Natural Language Processing (NLP), one of the primary challenges is how to represent human language in a form that computers can process. This is where ***vectorized representations of text*** come into play. Text data, such as sentences, paragraphs, or entire documents, need to be converted into numerical formats to be understood by machine learning algorithms. Vectorization transforms raw text into fixed-length, dense, or sparse vectors that capture the semantic properties of the words or sentences, enabling machines to perform tasks like classification, similarity search, and recommendation.
 
 The methods you'll explore in this assignment — Bag of Words (BoW), TF-IDF, and Sentence Embeddings (SBERT) — are foundational techniques in NLP, each with its own strengths and weaknesses. Understanding these representations is critical for a wide range of applications in the field of NLP.
@@ -18,13 +13,16 @@ As part of this assignment, you will explore various strategies for constructing
  1. Evaluate two word-based methods for generating sparse vector representations of text: bag-of-words and TF-IDF-weighted word vectors.
  2. Use pre-trained embedding models to generate dense representations of the same text fragments.
 
-This assignment will be completed in pairs. To make your work more manageable, a CoLab notebook has been provided. It includes the basic structure of the tasks, along with code snippets to help you complete the assignment. You will use this CoLab notebook to:
+This assignment will be completed in pairs. To make your work more manageable, a [CoLab notebook](https://colab.research.google.com/drive/18JEqt15fu-am84cz7hpkCCGXC-KUOoEc?usp=sharing) has been provided. It includes the basic structure of the tasks, along with code snippets to help you complete the assignment. You will use this CoLab notebook to:
 
  * Complete the required tasks.
  * Describe the results you obtain.
- * Document the parameters you evaluate.
 
-The completed CoLab notebook will serve as your deliverable, demonstrating the successful completion of this assignment. Detailed instructions for each task are provided in the following sections.
+Remember that you will need to be logged with your GCloud account to access the CoLab notebook.
+
+###Submission
+
+In this assignment, your task is to implement the different strategies to produce vector representations of text try them with the dataset described in this document. Try the different configurations and observe the results obtained. A base CoLab notebook is provided that contains the basic structure of the work to be done in this assignment. Follow the instructions in this document to both implement the solutions and to describe the results obtained ant the conclusions drawn from this work. Once this is done, you should download the resulting CoLab notebook and submit it via the UACloud tutoring system before 23:55 on Sunday, December 15, 2024. The assignment must be done in pairs. Remember to include both authors' names in the notebook.
 
 ## Part 1: Bag of Words (BoW) and TF-IDF Vectorization with Scikit-Learn
 
@@ -64,17 +62,17 @@ Analyze the differences obtained when changing these parameters and provide a sh
 
 ### Step 3: Similarity Search
 
-After creating the vector representations for the entire dataset, you will perform vector comparisons to identify similarities between these representations. In this step, you will compare the representations of three new queries against the entire dataset. Each query consists of the title and abstract of a paper published in the proceedings of the ACL 2019 conference. These queries are:
+After creating the vector representations for the entire dataset, you will perform vector comparisons to identify similarities between these representations. In this step, you will compare the representations of three new queries against the entire dataset. Each query consists of the title and abstract of a paper published in different journals and international conferences. These queries are:
 
- * Query 1:
-   * *Title*: Towards Unsupervised Text Classification Leveraging Experts and Word Embeddings
-   * *Abstract*: Text classification aims at mapping documents into a set of predefined categories. Supervised machine learning models have shown great success in this area but they require a large number of labeled documents to reach adequate accuracy. This is particularly true when the number of target categories is in the tens or the hundreds. In this work, we explore an unsupervised approach to classify documents into categories simply described by a label. The proposed method is inspired by the way a human proceeds in this situation: It draws on textual similarity between the most relevant words in each document and a dictionary of keywords for each category reflecting its semantics and lexical field. The novelty of our method hinges on the enrichment of the category labels through a combination of human expertise and language models, both generic and domain specific. Our experiments on 5 standard corpora show that the proposed method increases F1-score over relying solely on human expertise and can also be on par with simple supervised approaches. It thus provides a practical alternative to situations where low cost text categorization is needed, as we illustrate with our application to operational risk incidents classification.
- * Query 2:
-   * *Title*: Learning to Ask Unanswerable Questions for Machine Reading Comprehension
-   * *Abstract*: Machine reading comprehension with unanswerable questions is a challenging task. In this work, we propose a data augmentation technique by automatically generating relevant unanswerable questions according to an answerable question paired with its corresponding paragraph that contains the answer. We introduce a pair-to-sequence model for unanswerable question generation, which effectively captures the interactions between the question and the paragraph. We also present a way to construct training data for our question generation models by leveraging the existing reading comprehension dataset. Experimental results show that the pair-to-sequence model performs consistently better compared with the sequence-to-sequence baseline. We further use the automatically generated unanswerable questions as a means of data augmentation on the SQuAD 2.0 dataset, yielding 1.9 absolute F1 improvement with BERT-base model and 1.7 absolute F1 improvement with BERT-large model.
- * Qyery 3:
-   * *Title*: Unsupervised Neural Text Simplification
-   * *Abstract*: The paper presents a first attempt towards unsupervised neural text simplification that relies only on unlabeled text corpora. The core framework is composed of a shared encoder and a pair of attentional-decoders, crucially assisted by discrimination-based losses and denoising. The framework is trained using unlabeled text collected from en-Wikipedia dump. Our analysis (both quantitative and qualitative involving human evaluators) on public test data shows that the proposed model can perform text-simplification at both lexical and syntactic levels, competitive to existing supervised methods. It also outperforms viable unsupervised baselines. Adding a few labeled pairs helps improve the performance further.
+* Query 1:
+    * *Title*: QUALES: Machine translation quality estimation via supervised and unsupervised machine learning.
+    * *Abstract*: The automatic quality estimation (QE) of machine translation consists in measuring the quality of translations without access to human references, usually via machine learning approaches. A good QE system can help in three aspects of translation processes involving machine translation and post-editing: increasing productivity (by ruling out poor quality machine translation), estimating costs (by helping to forecast the cost of post-editing) and selecting a provider (if several machine translation systems are available). Interest in this research area has grown significantly in recent years, leading to regular shared tasks in the main machine translation conferences and intense scientific activity. In this article we review the state of the art in this research area and present project QUALES, which is under development. 
+* Query 2:
+    * *Title*: Learning to Ask Unanswerable Questions for Machine Reading Comprehension
+    * *Abstract*: Machine reading comprehension with unanswerable questions is a challenging task. In this work, we propose a data augmentation technique by automatically generating relevant unanswerable questions according to an answerable question paired with its corresponding paragraph that contains the answer. We introduce a pair-to-sequence model for unanswerable question generation, which effectively captures the interactions between the question and the paragraph. We also present a way to construct training data for our question generation models by leveraging the existing reading comprehension dataset. Experimental results show that the pair-to-sequence model performs consistently better compared with the sequence-to-sequence baseline. We further use the automatically generated unanswerable questions as a means of data augmentation on the SQuAD 2.0 dataset, yielding 1.9 absolute F1 improvement with BERT-base model and 1.7 absolute F1 improvement with BERT-large model.
+* Qyery 3:
+    * *Title*: Unsupervised Neural Text Simplification
+    * *Abstract*: The paper presents a first attempt towards unsupervised neural text simplification that relies only on unlabeled text corpora. The core framework is composed of a shared encoder and a pair of attentional-decoders, crucially assisted by discrimination-based losses and denoising. The framework is trained using unlabeled text collected from en-Wikipedia dump. Our analysis (both quantitative and qualitative involving human evaluators) on public test data shows that the proposed model can perform text-simplification at both lexical and syntactic levels, competitive to existing supervised methods. It also outperforms viable unsupervised baselines. Adding a few labeled pairs helps improve the performance further.
 
 To do so, you will have to use the method `transform` of the vectorization object used to produce the vectors of the original dataset. The difference between the `fit_transform` and `transform` methods is that the first learns the vocabulary from the dataset and then produces the vectorized representations of the text fragments, while the second one uses the vocabulary already learned to produce the represenation for new text fragments.
 
@@ -87,7 +85,7 @@ You can use the class `sklearn.metrics.pairwise.cosine_similarity` to compute th
  
 ### Step 4: Analysis of the results obtained
 
-Spend some time anlysing the results obtained with the two techniques and with the different parameters you modified. Add some discussion on your conclusions in the notebook.
+Spend some time anlysing the results obtained with the two techniques and with the different parameters you modified. Describe your impression about the relation between the papers in the query and those found with the different approaches. You can also comment on how informative or easy to interpret are the scores Add some discussion on your conclusions in the notebook.
 
 ## Part 2: Sentence Embeddings with SentenceTransformers
 
@@ -107,7 +105,7 @@ Note that, unlike BoW and TF-IDF, sentence embeddings capture the semantic meani
 
 ### Step 1: Trying a general purpose small monolingual model
 
-We will first try a small model that allows to build semantic embeddings for English: the model `all-MiniLM-L6-v2`. You have a nice example on how to obtain the *n*-top matches for a query search in a collection of embeddings using the cosine similarity at: [https://www.sbert.net/examples/applications/semantic-search/README.html].
+We will first try a small model that allows to build semantic embeddings for English: the model `all-MiniLM-L6-v2`. You have a nice example on how to obtain the *n*-top matches for a query search in a collection of embeddings using the cosine similarity at: [https://www.sbert.net/examples/applications/semantic-search/README.html](https://www.sbert.net/examples/applications/semantic-search/README.html).
 
 Note that in this case you will not need to specify any data preprocessing details. The pre-trained model already includes a sub-word tokenizer and takes care of this. Given that these components are trained, changing, for example, capitals, or removing words, could affect negatively to the performance of the model and the quality of the resulting embeddings.
 
@@ -115,7 +113,7 @@ Run the semantic search, and compare the results obtained to those obtained prev
 
 ### Step 2: Comparing other models
 
-The `SentenceTransformers` library provides easy access to a number of [pretrained text embedding models](https://sbert.net/docs/sentence_transformer/pretrained_models.html). Try reproducing the experiment carried out in the previous step using other models. As already mentioned, the `all-MiniLM-L12-v2` model is rather small and general purpose. By *small* it should also be understood that the size of the embeddings is samll, but also that the amount of text that can parse is rather small (256 sub-word tokens, acording to the documentation in the library website). You can try with larger models, such as `all-distilroberta-v1`, and also with specific purpose: the `SPECTER` model is specifically aimed at detecting the similarity between two scientific papers.
+The `SentenceTransformers` library provides easy access to a number of [pretrained text embedding models](https://sbert.net/docs/sentence_transformer/pretrained_models.html). Try reproducing the experiment carried out in the previous step using other models. As already mentioned, the `all-MiniLM-L6-v2` model is rather small and general purpose. By *small* it should also be understood that the size of the embeddings is samll, but also that the amount of text that can parse is rather small (256 sub-word tokens, acording to the documentation in the library website). You can try with larger models, such as `all-distilroberta-v1`, and also with specific purpose: the `SPECTER` model is specifically aimed at detecting the similarity between two scientific papers.
 
 Again, try to draw conclusions from the use of these different models: what is your use experience, what is the impact in the results obtained, etc. Try to describe these conclusions in the notbook.
 
@@ -123,6 +121,6 @@ Again, try to draw conclusions from the use of these different models: what is y
 
 Finally, you will explore the use of cross-lingual embedding models. The `SentenceTransformers` library provides a few pre-trained models of this type that enable the comparison of embeddings obtained from text fragments in different languages. You can try, for example, the model `distiluse-base-multilingual-cased-v1`. In order to be able to test the performance of these cross-lingual model, a new dataset has been created with the exact same format as the first one, but with papers extracted from the SEPLN journal. This journal allows papers in Spanish and in English. Try following the same steps you followed before with and search for the same query papers, but now on this bilingual dataset. Compare the results obtained when using a monolingual model and a cross-lingual model to obtain the embeddings. Once more, comment on your observations and the conclusions you are able to draw from them.
 
-## Conclusing remarks
+## Concluding remarks
 
 After this evaluation, you have explored different strategies to obtain vector representations of text. End your notebook with a general overview of the work done and your experience in comparing these models. Try to identify the strengths and the waeknesses of the different methods compared and discuss them.

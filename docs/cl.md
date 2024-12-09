@@ -6,6 +6,8 @@ In this session, we will introduce some fundamental concepts and techniques in N
 
 With this in mind, the session will be organized into four main blocks. We will begin by discussing the steps involved in preparing text or a corpus for NLP applications. Next, we will explore how text can be processed at three different levels: the word level (morphology), the sentence structure level (syntax), and finally, the level of sentence meaning (semantics).
 
+The [slides for the first session](https://dlsi.ua.es/~mespla/session1tpln.pdf) are now available.
+
 ## Text preprocessing
 
 ### Contents to prepare before the session on 12/4/2024
