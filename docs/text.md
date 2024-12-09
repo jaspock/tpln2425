@@ -39,7 +39,7 @@ In the in-person class (5 hours 🕒️ in duration), we will see how to impleme
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>, and a transformer <a target="_blank" href="https://colab.research.google.com/github/jaspock/me/blob/main/docs/materials/transformers/assets/notebooks/transformer.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> following the implementations discussed in [this section](https://www.dlsi.ua.es/~japerez/materials/transformers/implementacion/#code-transformer) and the next two.
 
-The idea is for you to study and slightly modify the notebooks we are working on. In a later class, a more advanced assignment involving modifying the transformer's code will be presented.
+The idea is for you to study and slightly modify the notebooks we are working on. We will also present the [assignment](assignment-interpretability.md) on mechanistic interpretability you need to submit for this module of the course.
 
 ## Third session (January 8, 2025)
 
@@ -57,7 +57,7 @@ The activities to complete before this class are:
 
 In the in-person class (5 hours 🕒️ in duration), we will see how to implement on top of our transformer architecture code both a language model based on a decoder <a target="_blank" href="https://colab.research.google.com/github/jaspock/me/blob/main/docs/materials/transformers/assets/notebooks/lmgpt.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> and a named entity recognition model <a target="_blank" href="https://colab.research.google.com/github/jaspock/me/blob/main/docs/materials/transformers/assets/notebooks/nerbert.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a> based on an encoder.
 
-We will take the opportunity to review some aspects of the code from previous sessions and relate theoretical aspects with practical ones. We will also present the assignment you need to submit for this module of the course.
+We will take the opportunity to review some aspects of the code from previous sessions and relate theoretical aspects with practical ones.
 
 ## Fourth session (January 15, 2025)
 
