@@ -25,7 +25,7 @@ For information regarding the course assessment, please refer to the [course off
 [japerez_twitter]: https://twitter.com/japer3z
 [syllabus]: https://cvnet.cpd.ua.es/Guia-Docente/GuiaDocente/Index?wcodest=D114&wcodasi=43505&wlengua=C&scaca=2024-25
 
-- Practical assignments are to be completed individually or in pairs, as indicated in each assignment description. Each of the course blocks will have one or more practical assignments. The assignments in the first block contribute 25% to the final grade, the second block assignments contribute 55%, and the third block assignments contribute 20%.
+- Practical assignments are to be completed individually or in pairs, as indicated in each assignment description. Each of the course blocks (computational linguistics, text, speech) will have one or more practical assignments. The assignments in the first block contribute 25% to the final grade, the second block assignments contribute 55%, and the third block assignments contribute 20%. In case, the speech block has no practical assignments, the contributions of the first and second blocks will be 22% and 78%, respectively.
 - Attendance in practical sessions is mandatory. Roll call will be taken in each in-person session. A maximum of 1 unexcused absence is allowed. If a student accumulates more unexcused absences than the allowed limit, they will not be able to pass the practical component of the course in the C2 examination. However, they will have the opportunity to pass it in the C4.
 
 The [source code][source] of these pages, written in markdown for MkDocs, is available on GitHub.
